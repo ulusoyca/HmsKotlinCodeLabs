@@ -8,14 +8,21 @@
     <fragment
         android:id="@+id/home_fragment"
         android:label="@string/home_fragment_label"
-        android:name="com.ulusoy.hmscodelabs.HomeFragment"
+        android:name="com.ulusoy.hmscodelabs.main.home.HomeFragment"
         tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_fragment_to_account_kit_fragment"
+            app:destination="@id/account_kit_fragment"
+            app:enterAnim="@anim/transition_slide_in_from_right"
+            app:exitAnim="@anim/transition_slide_out_to_left"
+            app:popEnterAnim="@anim/transition_slide_in_from_left"
+            app:popExitAnim="@anim/transition_slide_out_to_right" />
     </fragment>
 
     <fragment
         android:id="@+id/account_kit_fragment"
         android:label="@string/account_kit_fragment_label"
-        android:name="com.ulusoy.hmscodelabs.AccountKitFragment"
+        android:name="com.ulusoy.hmscodelabs.main.accountkit.AccountKitFragment"
         tools:layout="@layout/fragment_account_kit">
     </fragment>
 </navigation>

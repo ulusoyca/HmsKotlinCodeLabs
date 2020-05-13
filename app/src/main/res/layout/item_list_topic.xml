@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="topic"
+            type="Integer" />
+
+        <variable
+            name="topicSelectedListener"
+            type="com.ulusoy.hmscodelabs.main.home.TopicSelectedListener" />
+    </data>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textView"
+        style="@style/Body.Large_Text_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_spacing_medium"
+        android:layout_marginEnd="@dimen/size_spacing_medium"
+        android:text="@{topic}"
+        app:icon="@drawable/ic_label_outline"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/size_spacing_medium"
+        app:iconSize="@dimen/size_spacing_large"
+        android:onClick="@{() -> topicSelectedListener.onTopicSelected(topic)}"
+        tools:text="Account Kit" />
+</layout>
