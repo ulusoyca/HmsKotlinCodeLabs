@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HmsCodelabs</string>
+    <string name="action_account_kit">Account Kit</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home Fragment</string>
+    <string name="account_kit_fragment_label">Account Kit Fragment</string>
+
+    <string name="hello_home_fragment">Hello, Welcome to HMS Codelabs!\n\nChoose Codelab from the three dots on right top corner of this screen</string>
+</resources>

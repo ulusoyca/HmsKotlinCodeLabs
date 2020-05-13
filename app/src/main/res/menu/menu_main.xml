@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ulusoy.hmscodelabs.MainActivity">
+    <item
+        android:id="@+id/account_kit_fragment"
+        android:orderInCategory="0"
+        android:title="@string/action_account_kit"
+        app:showAsAction="never" />
+</menu>
