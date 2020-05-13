@@ -1,8 +1,24 @@
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
 <resources>
-    <string name="app_name">HmsCodelabs</string>
+    <string name="app_name">HMS Codelabs</string>
     <string name="action_account_kit">Account Kit</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="home_fragment_label">Home Fragment</string>
+    <string name="home_fragment_label">HMS Codelabs</string>
     <string name="account_kit_fragment_label">Account Kit Codelab</string>
 
     <string name="hello_home_fragment">Hello, Welcome to HMS Codelabs!\n\nChoose a Codelab from the list:</string>
