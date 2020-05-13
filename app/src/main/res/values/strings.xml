@@ -5,5 +5,25 @@
     <string name="home_fragment_label">Home Fragment</string>
     <string name="account_kit_fragment_label">Account Kit Fragment</string>
 
-    <string name="hello_home_fragment">Hello, Welcome to HMS Codelabs!\n\nChoose Codelab from the three dots on right top corner of this screen</string>
+    <string name="hello_home_fragment">Hello, Welcome to HMS Codelabs!\n\nChoose a Codelab from the list:</string>
+
+    <string name="topic_name_scan_kit">Scan Kit</string>
+    <string name="topic_name_site_kit">Site Kit</string>
+    <string name="topic_name_ml_kit">ML Kit</string>
+    <string name="topic_name_wallet_kit">Wallet Kit</string>
+    <string name="topic_name_safety_detect">Safety Detect</string>
+    <string name="topic_name_account_kit">Account Kit</string>
+    <string name="topic_name_location_kit">Location Kit</string>
+    <string name="topic_name_map_kit">Map Kit</string>
+    <string name="topic_name_iap">In App Purchase</string>
+    <string name="topic_name_dtm">Dynamic Tag Manager</string>
+    <string name="topic_name_drive_kit">Drive Kit</string>
+    <string name="topic_name_hms_toolkit">HMS Toolkit</string>
+    <string name="topic_name_nearby_service">Nearby Service</string>
+    <string name="topic_name_agp_firebase">AppGallery and Firebase</string>
+    <string name="topic_name_drm_kit">DRM Kit</string>
+    <string name="topic_name_panorama_kit">Panorama Kit</string>
+    <string name="topic_name_awareness_kit">Awareness Kit</string>
+    <string name="topic_name_health_kit">Health Kit</string>
+    <string name="codelab_not_implemented">Codelab has not yet been implemented</string>
 </resources>

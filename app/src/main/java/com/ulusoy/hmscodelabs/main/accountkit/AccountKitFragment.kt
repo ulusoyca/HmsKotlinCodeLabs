@@ -1,12 +1,13 @@
-package com.ulusoy.hmscodelabs
+package com.ulusoy.hmscodelabs.main.accountkit
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import com.ulusoy.hmscodelabs.R
+import dagger.android.support.DaggerFragment
 
-class AccountKitFragment : Fragment() {
+class AccountKitFragment : DaggerFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,

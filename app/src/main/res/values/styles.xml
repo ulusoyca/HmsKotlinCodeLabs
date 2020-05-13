@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -16,5 +16,13 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Body.Large_Text_Button" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:letterSpacing">0.009375</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:textSize">@dimen/textsize_large</item>
+    </style>
 
 </resources>
