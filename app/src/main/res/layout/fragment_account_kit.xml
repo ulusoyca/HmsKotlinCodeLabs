@@ -1,20 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:id="@+id/textview_first"
+        android:id="@+id/account_kit_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="32dp"
-        android:text="HELLO!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/size_spacing_medium"
+        style="@style/Header.Large"
+        android:text="@string/account_kit_usage_process"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/account_kit_id_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/account_kit_header"
+        android:layout_margin="@dimen/size_spacing_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/account_kit_id_token_mode"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/account_kit_auth_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/account_kit_id_token"
+        android:layout_margin="@dimen/size_spacing_medium"
+        app:layout_constraintStart_toStartOf="@+id/account_kit_id_token"
+        app:layout_constraintEnd_toEndOf="@+id/account_kit_id_token"
+        android:text="@string/account_kit_auth_mode"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/account_kit_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/account_kit_auth_mode"
+        android:layout_margin="@dimen/size_spacing_medium"
+        app:layout_constraintStart_toStartOf="@+id/account_kit_id_token"
+        app:layout_constraintEnd_toEndOf="@+id/account_kit_id_token"
+        android:text="@string/account_kit_sign_out"/>
+
+    <TextView
+        android:id="@+id/account_kit_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/account_kit_id_token"
+        app:layout_constraintEnd_toEndOf="@+id/account_kit_id_token"
+        android:layout_margin="@dimen/size_spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/account_kit_sign_out"
+        tools:text ="Token = xyz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

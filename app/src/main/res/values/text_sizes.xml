@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Sizes for generic text elements -->
+    <dimen name="textsize_xsmall">12sp</dimen>
+    <dimen name="textsize_small">14sp</dimen>
+    <dimen name="textsize_medium">16sp</dimen>
+    <dimen name="textsize_large">18sp</dimen>
+    <dimen name="textsize_xlarge">20sp</dimen>
+
+    <!-- Sizes for datalabels -->
+    <dimen name="textsize_data_xxsmall">20dp</dimen>
+    <dimen name="textsize_data_xsmall">27dp</dimen>
+    <dimen name="textsize_data_small">35dp</dimen>
+    <dimen name="textsize_data_medium">45dp</dimen>
+    <dimen name="textsize_data_large">56dp</dimen>
+    <dimen name="textsize_data_xlarge">64dp</dimen>
+    <dimen name="textsize_data_xxlarge">72dp</dimen>
+
+</resources>
