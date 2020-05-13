@@ -14,12 +14,4 @@
     <dimen name="size_spacing_xxsmall">2dp</dimen>
     <dimen name="size_spacing_xxxsmall">1dp</dimen>
     <dimen name="size_spacing_zero">0dp</dimen>
-
-    <!-- Sizes for generic text elements -->
-    <dimen name="textsize_xsmall">12sp</dimen>
-    <dimen name="textsize_small">14sp</dimen>
-    <dimen name="textsize_medium">16sp</dimen>
-    <dimen name="textsize_large">18sp</dimen>
-    <dimen name="textsize_xlarge">20sp</dimen>
-
 </resources>

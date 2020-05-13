@@ -3,7 +3,7 @@
     <string name="action_account_kit">Account Kit</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Home Fragment</string>
-    <string name="account_kit_fragment_label">Account Kit Fragment</string>
+    <string name="account_kit_fragment_label">Account Kit Codelab</string>
 
     <string name="hello_home_fragment">Hello, Welcome to HMS Codelabs!\n\nChoose a Codelab from the list:</string>
 
@@ -26,4 +26,10 @@
     <string name="topic_name_awareness_kit">Awareness Kit</string>
     <string name="topic_name_health_kit">Health Kit</string>
     <string name="codelab_not_implemented">Codelab has not yet been implemented</string>
+
+
+    <string name="account_kit_usage_process">Huawei Account Usage Process</string>
+    <string name="account_kit_id_token_mode">ID-Token Mode SignIn</string>
+    <string name="account_kit_auth_mode">AuthorizationCode Mode SignIn</string>
+    <string name="account_kit_sign_out">SignOut</string>
 </resources>
