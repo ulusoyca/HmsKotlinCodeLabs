@@ -104,7 +104,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
-
     // Epoxy
     implementation "com.airbnb.android:epoxy-databinding:$epoxy_version"
     implementation "com.airbnb.android:epoxy:$epoxy_version"
@@ -113,7 +112,12 @@ dependencies {
     // Timber
     implementation "com.jakewharton.timber:timber:$timber_version"
 
+    // Easy permission from google samples: https://github.com/googlesamples/easypermissions
+    implementation "pub.devrel:easypermissions:$easy_permissions_version"
+
+    // Huawei
     implementation "com.huawei.hms:hwid:$hwid_version"
+    implementation "com.huawei.hms:maps:$hmaps_version"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

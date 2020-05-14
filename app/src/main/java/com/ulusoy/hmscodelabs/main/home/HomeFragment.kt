@@ -59,6 +59,7 @@ class HomeFragment : DaggerFragment(), TopicSelectedListener {
     override fun onTopicSelected(topic: Int) {
         val direction: NavDirections? = when (topic) {
             R.string.topic_name_account_kit -> HomeFragmentDirections.actionHomeFragmentToAccountKitFragment()
+            R.string.topic_name_map_kit -> HomeFragmentDirections.actionHomeFragmentToMapKitFragment()
             else -> null
         }
         if (direction == null) {

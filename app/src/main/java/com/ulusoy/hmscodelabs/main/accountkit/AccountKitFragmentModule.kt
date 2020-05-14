@@ -24,5 +24,5 @@ import dagger.android.ContributesAndroidInjector
 abstract class AccountKitFragmentModule {
     @FragmentScope
     @ContributesAndroidInjector(modules = [AccountKitModule::class])
-    abstract fun bindInfinitiveFragment(): AccountKitFragment
+    abstract fun bindAccountKitFragment(): AccountKitFragment
 }

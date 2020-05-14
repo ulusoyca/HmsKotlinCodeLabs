@@ -33,6 +33,9 @@
             app:exitAnim="@anim/transition_slide_out_to_left"
             app:popEnterAnim="@anim/transition_slide_in_from_left"
             app:popExitAnim="@anim/transition_slide_out_to_right" />
+        <action
+            android:id="@+id/action_home_fragment_to_mapKitFragment"
+            app:destination="@id/mapKitFragment" />
     </fragment>
 
     <fragment
@@ -41,4 +44,8 @@
         android:name="com.ulusoy.hmscodelabs.main.accountkit.AccountKitFragment"
         tools:layout="@layout/fragment_account_kit">
     </fragment>
+    <fragment
+        android:id="@+id/mapKitFragment"
+        android:label="@string/map_kit_fragment_label"
+        android:name="com.ulusoy.hmscodelabs.main.mapkit.MapKitFragment" />
 </navigation>
