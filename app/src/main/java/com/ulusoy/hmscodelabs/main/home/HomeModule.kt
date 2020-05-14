@@ -41,11 +41,9 @@ abstract class HomeModule {
         @Provides
         @Named(NAMED_TOPIC_NAMES)
         fun provideTopicNames(): List<Int> = listOf(
-            R.string.topic_name_site_kit,
-            R.string.topic_name_scan_kit,
-            R.string.topic_name_ml_kit,
             R.string.topic_name_wallet_kit,
             R.string.topic_name_safety_detect,
+            R.string.topic_name_ad_kit,
             R.string.topic_name_account_kit,
             R.string.topic_name_location_kit,
             R.string.topic_name_map_kit,
@@ -53,6 +51,9 @@ abstract class HomeModule {
             R.string.topic_name_dtm,
             R.string.topic_name_drive_kit,
             R.string.topic_name_hms_toolkit,
+            R.string.topic_name_site_kit,
+            R.string.topic_name_scan_kit,
+            R.string.topic_name_ml_kit,
             R.string.topic_name_nearby_service,
             R.string.topic_name_agp_firebase,
             R.string.topic_name_drm_kit,

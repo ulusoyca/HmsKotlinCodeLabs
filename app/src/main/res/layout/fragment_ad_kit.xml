@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/ad_kit_header_oaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_spacing_medium"
+        style="@style/Header.Large"
+        android:text="@string/ad_kit_oaid_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ad_kit_value_oaid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/ad_kit_header_oaid"
+        app:layout_constraintStart_toStartOf="@+id/ad_kit_header_oaid"
+        app:layout_constraintEnd_toEndOf="@+id/ad_kit_header_oaid"
+        tools:text="@tools:sample/lorem/random"/>
+
+    <TextView
+        android:id="@+id/ad_kit_ads_personalization_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_spacing_medium"
+        android:layout_margin="@dimen/size_spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/ad_kit_value_oaid"
+        app:layout_constraintStart_toStartOf="@+id/ad_kit_header_oaid"
+        app:layout_constraintEnd_toEndOf="@+id/ad_kit_header_oaid"
+        style="@style/Header.Large"
+        android:text="@string/ad_kit_personalization_state"/>
+
+    <TextView
+        android:id="@+id/ad_kit_ads_personalization_status_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/ad_kit_ads_personalization_status"
+        app:layout_constraintStart_toStartOf="@+id/ad_kit_header_oaid"
+        app:layout_constraintEnd_toEndOf="@+id/ad_kit_header_oaid"
+        tools:text="@tools:sample/lorem"/>
+    
+ 
+
+</androidx.constraintlayout.widget.ConstraintLayout>

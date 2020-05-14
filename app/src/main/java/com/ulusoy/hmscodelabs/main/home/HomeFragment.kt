@@ -61,6 +61,7 @@ class HomeFragment : DaggerFragment(), TopicSelectedListener {
             R.string.topic_name_account_kit -> HomeFragmentDirections.actionHomeFragmentToAccountKitFragment()
             R.string.topic_name_map_kit -> HomeFragmentDirections.actionHomeFragmentToMapKitFragment()
             R.string.topic_name_location_kit -> HomeFragmentDirections.actionHomeFragmentToLocationKitFragment()
+            R.string.topic_name_ad_kit -> HomeFragmentDirections.actionHomeFragmentToAdKitFragment()
             else -> null
         }
         if (direction == null) {
