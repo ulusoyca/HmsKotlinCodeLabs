@@ -20,6 +20,7 @@
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">HMS Codelabs</string>
     <string name="account_kit_fragment_label">Account Kit Codelab</string>
+    <string name="map_kit_fragment_label">Map Kit Codelab</string>
 
     <string name="hello_home_fragment">Hello, Welcome to HMS Codelabs!\n\nChoose a Codelab from the list:</string>
 
@@ -48,4 +49,5 @@
     <string name="account_kit_id_token_mode">ID-Token Mode SignIn</string>
     <string name="account_kit_auth_mode">AuthorizationCode Mode SignIn</string>
     <string name="account_kit_sign_out">SignOut</string>
+    <string name="map_kit_permission_rationale">This codelab requires following permissions.</string>
 </resources>

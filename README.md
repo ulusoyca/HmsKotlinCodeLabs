@@ -12,11 +12,11 @@
 
 Home screen
 
-![homePage](app/src/main/res/mipmap-hdpi/homePage_1.png)
+![accountKit](Screenshots/home_page.png)
 
 Example Codelab
 
-![accountKit](app/src/main/res/mipmap-hdpi/accountKit_1.png)
+![accountKit](Screenshots/account_kit.png)
 
 ## Author
 
