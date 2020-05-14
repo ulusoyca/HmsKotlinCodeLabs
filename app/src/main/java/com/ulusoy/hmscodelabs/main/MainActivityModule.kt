@@ -18,6 +18,7 @@ package com.ulusoy.hmscodelabs.main
 
 import com.ulusoy.hmscodelabs.ActivityScope
 import com.ulusoy.hmscodelabs.main.accountkit.AccountKitFragmentModule
+import com.ulusoy.hmscodelabs.main.adkit.AdKitFragmentModule
 import com.ulusoy.hmscodelabs.main.home.HomeFragmentModule
 import com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragmentModule
 import dagger.Module
@@ -31,6 +32,7 @@ abstract class MainActivityModule {
             HomeFragmentModule::class,
             AccountKitFragmentModule::class,
             LocationKitFragmentModule::class,
+            AdKitFragmentModule::class,
             MainModule::class
         ]
     )

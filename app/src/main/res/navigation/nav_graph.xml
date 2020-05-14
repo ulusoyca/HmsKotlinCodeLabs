@@ -39,6 +39,9 @@
         <action
             android:id="@+id/action_home_fragment_to_locationKitFragment"
             app:destination="@id/locationKitFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_adKitFragment"
+            app:destination="@id/adKitFragment" />
     </fragment>
 
     <fragment
@@ -55,4 +58,8 @@
         android:id="@+id/locationKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragment"
         android:label="LocationKitFragment" />
+    <fragment
+        android:id="@+id/adKitFragment"
+        android:name="com.ulusoy.hmscodelabs.main.adkit.AdKitFragment"
+        android:label="AdKitFragment" />
 </navigation>

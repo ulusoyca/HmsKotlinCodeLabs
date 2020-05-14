@@ -53,4 +53,9 @@
     <string name="location_kit_request">Request Location Updates</string>
     <string name="location_kit_remove">Remove Location Updates</string>
     <string name="location_kit_location_update_removed">Location update removed.</string>
+    <string name="ad_kit_oaid_text">OAID</string>
+    <string name="ad_kit_personalization_state">Ads Personalization State</string>
+    <string name="enabled">enabled</string>
+    <string name="disabled">disabled</string>
+    <string name="topic_name_ad_kit">Ad Kit</string>
 </resources>
