@@ -60,6 +60,7 @@ class HomeFragment : DaggerFragment(), TopicSelectedListener {
         val direction: NavDirections? = when (topic) {
             R.string.topic_name_account_kit -> HomeFragmentDirections.actionHomeFragmentToAccountKitFragment()
             R.string.topic_name_map_kit -> HomeFragmentDirections.actionHomeFragmentToMapKitFragment()
+            R.string.topic_name_location_kit -> HomeFragmentDirections.actionHomeFragmentToLocationKitFragment()
             else -> null
         }
         if (direction == null) {

@@ -44,9 +44,7 @@ abstract class AccountKitModule {
     /* Note: the return type should be ViewModel */
     abstract fun bindViewModel(viewModel: AccountKitViewModel): ViewModel
 
-    @Module
     companion object {
-        @JvmStatic
         @Provides
         @Named(NAMED_ID_TOKEN)
         @FragmentScope
@@ -59,7 +57,6 @@ abstract class AccountKitModule {
             return HuaweiIdAuthManager.getService(mainActivity, huaweiIdAuthParams)
         }
 
-        @JvmStatic
         @Provides
         @Named(NAMED_AUTH_TOKEN)
         @FragmentScope
@@ -72,13 +69,11 @@ abstract class AccountKitModule {
             return HuaweiIdAuthManager.getService(mainActivity, huaweiIdAuthParams)
         }
 
-        @JvmStatic
         @Provides
         @Named(NAMED_REQUEST_CODE_SIGN_IN_TOKEN_ID)
         @FragmentScope
         fun provideTokenIdSignInRequestCode(): Int = 0
 
-        @JvmStatic
         @Provides
         @Named(NAMED_REQUEST_CODE_SIGN_IN_AUTH_CODE)
         @FragmentScope

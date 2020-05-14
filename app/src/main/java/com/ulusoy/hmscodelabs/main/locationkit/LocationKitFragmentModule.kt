@@ -14,25 +14,15 @@
  * limitations under the License.
  */
 
-package com.ulusoy.hmscodelabs.main
+package com.ulusoy.hmscodelabs.main.locationkit
 
-import com.ulusoy.hmscodelabs.ActivityScope
-import com.ulusoy.hmscodelabs.main.accountkit.AccountKitFragmentModule
-import com.ulusoy.hmscodelabs.main.home.HomeFragmentModule
-import com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragmentModule
+import com.ulusoy.hmscodelabs.FragmentScope
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
 @Module
-abstract class MainActivityModule {
-    @ActivityScope
-    @ContributesAndroidInjector(
-        modules = [
-            HomeFragmentModule::class,
-            AccountKitFragmentModule::class,
-            LocationKitFragmentModule::class,
-            MainModule::class
-        ]
-    )
-    abstract fun contributeMainActivityInjector(): MainActivity
+abstract class LocationKitFragmentModule {
+    @FragmentScope
+    @ContributesAndroidInjector(modules = [LocationKitModule::class])
+    abstract fun bindLocationKitFragment(): LocationKitFragment
 }

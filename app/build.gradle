@@ -118,6 +118,7 @@ dependencies {
     // Huawei
     implementation "com.huawei.hms:hwid:$hwid_version"
     implementation "com.huawei.hms:maps:$hmaps_version"
+    implementation "com.huawei.hms:location:$hms_location_version"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

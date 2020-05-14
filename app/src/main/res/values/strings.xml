@@ -50,4 +50,7 @@
     <string name="account_kit_auth_mode">AuthorizationCode Mode SignIn</string>
     <string name="account_kit_sign_out">SignOut</string>
     <string name="map_kit_permission_rationale">This codelab requires following permissions.</string>
+    <string name="location_kit_request">Request Location Updates</string>
+    <string name="location_kit_remove">Remove Location Updates</string>
+    <string name="location_kit_location_update_removed">Location update removed.</string>
 </resources>

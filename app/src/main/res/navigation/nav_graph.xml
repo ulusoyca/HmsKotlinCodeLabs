@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_home_fragment_to_mapKitFragment"
             app:destination="@id/mapKitFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_locationKitFragment"
+            app:destination="@id/locationKitFragment" />
     </fragment>
 
     <fragment
@@ -48,4 +51,8 @@
         android:id="@+id/mapKitFragment"
         android:label="@string/map_kit_fragment_label"
         android:name="com.ulusoy.hmscodelabs.main.mapkit.MapKitFragment" />
+    <fragment
+        android:id="@+id/locationKitFragment"
+        android:name="com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragment"
+        android:label="LocationKitFragment" />
 </navigation>

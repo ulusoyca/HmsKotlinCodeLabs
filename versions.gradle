@@ -62,4 +62,5 @@ ext {
     // HMS
     hwid_version = "4.0.0.300"
     hmaps_version = "4.0.1.301"
+    hms_location_version = "4.0.3.301"
 }

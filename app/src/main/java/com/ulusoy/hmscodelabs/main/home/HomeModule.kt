@@ -37,9 +37,7 @@ abstract class HomeModule {
     /* Note: the return type should be ViewModel */
     abstract fun bindViewModel(viewModel: HomeViewModel): ViewModel
 
-    @Module
     companion object {
-        @JvmStatic
         @Provides
         @Named(NAMED_TOPIC_NAMES)
         fun provideTopicNames(): List<Int> = listOf(
