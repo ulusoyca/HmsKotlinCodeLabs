@@ -21,6 +21,7 @@ import com.ulusoy.hmscodelabs.main.accountkit.AccountKitFragmentModule
 import com.ulusoy.hmscodelabs.main.adkit.AdKitFragmentModule
 import com.ulusoy.hmscodelabs.main.home.HomeFragmentModule
 import com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragmentModule
+import com.ulusoy.hmscodelabs.main.mlkit.MlKitFragmentModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -33,6 +34,7 @@ abstract class MainActivityModule {
             AccountKitFragmentModule::class,
             LocationKitFragmentModule::class,
             AdKitFragmentModule::class,
+            MlKitFragmentModule::class,
             MainModule::class
         ]
     )

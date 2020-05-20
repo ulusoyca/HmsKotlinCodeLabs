@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'org.jmailen.kotlinter'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'com.huawei.agconnect'
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-android-extensions"
+apply plugin: "org.jmailen.kotlinter"
+apply plugin: "kotlin-kapt"
+apply plugin: "com.huawei.agconnect"
 apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
@@ -37,10 +37,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('hms-codelabs-kotlin.jks')
-            keyAlias 'hms-codelabs-kotlin'
-            keyPassword '123456'
-            storePassword '123456'
+            storeFile file("hms-codelabs-kotlin.jks")
+            keyAlias "hms-codelabs-kotlin"
+            keyPassword "123456"
+            storePassword "123456"
             v1SigningEnabled true
             v2SigningEnabled true
         }
@@ -50,7 +50,7 @@ android {
         release {
             signingConfig signingConfigs.release
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
         debug {
             signingConfig signingConfigs.release
@@ -121,7 +121,14 @@ dependencies {
     implementation "com.huawei.hms:location:$hms_location_version"
     implementation "com.huawei.hms:ads-identifier:$hms_ads_version"
 
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    // Face detection SDK.
+    implementation "com.huawei.hms:ml-computer-vision-face:$hms_ml_kit"
+    // Face detection model.
+    implementation "com.huawei.hms:ml-computer-vision-face-emotion-model:$hms_ml_kit"
+    implementation "com.huawei.hms:ml-computer-vision-face-feature-model:$hms_ml_kit"
+    implementation "com.huawei.hms:ml-computer-vision-face-shape-point-model:$hms_ml_kit"
+
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "androidx.test.ext:junit:1.1.1"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.2.0"
 }

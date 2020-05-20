@@ -64,4 +64,5 @@ ext {
     hmaps_version = "4.0.1.301"
     hms_location_version = "4.0.3.301"
     hms_ads_version = "3.4.28.305"
+    hms_ml_kit = "1.0.4.300"
 }

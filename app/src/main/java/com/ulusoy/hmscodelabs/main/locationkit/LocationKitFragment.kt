@@ -96,7 +96,7 @@ class LocationKitFragment : DaggerFragment() {
         ) {
             EasyPermissions.requestPermissions(
                 this,
-                getString(R.string.map_kit_permission_rationale),
+                getString(R.string.permission_rationale),
                 REQUEST_CODE_PERMISSIONS,
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.ACCESS_FINE_LOCATION
@@ -108,7 +108,7 @@ class LocationKitFragment : DaggerFragment() {
         if (!EasyPermissions.hasPermissions(requireContext(), ACCESS_BACKGROUND_LOCATION)) {
             EasyPermissions.requestPermissions(
                 this,
-                getString(R.string.map_kit_permission_rationale),
+                getString(R.string.permission_rationale),
                 REQUEST_CODE_PERMISSIONS,
                 ACCESS_BACKGROUND_LOCATION
             )
