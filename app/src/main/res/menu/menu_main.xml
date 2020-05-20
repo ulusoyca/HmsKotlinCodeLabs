@@ -21,6 +21,6 @@
     <item
         android:id="@+id/account_kit_fragment"
         android:orderInCategory="0"
-        android:title="@string/action_account_kit"
+        android:title="@string/topic_name_account_kit"
         app:showAsAction="never" />
 </menu>
