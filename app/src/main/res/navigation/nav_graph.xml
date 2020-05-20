@@ -48,32 +48,39 @@
         <action
             android:id="@+id/action_home_fragment_to_fidoKitFragment"
             app:destination="@id/fidoKitFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_identityKitFragment"
+            app:destination="@id/identityKitFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/account_kit_fragment"
-        android:label="@string/account_kit_fragment_label"
+        android:label="@string/topic_name_account_kit"
         android:name="com.ulusoy.hmscodelabs.main.accountkit.AccountKitFragment"
         tools:layout="@layout/fragment_account_kit">
     </fragment>
     <fragment
         android:id="@+id/mapKitFragment"
-        android:label="@string/map_kit_fragment_label"
+        android:label="@string/topic_name_map_kit"
         android:name="com.ulusoy.hmscodelabs.main.mapkit.MapKitFragment" />
     <fragment
         android:id="@+id/locationKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragment"
-        android:label="@string/location_kit_fragment_label" />
+        android:label="@string/topic_name_location_kit" />
     <fragment
         android:id="@+id/adKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.adkit.AdKitFragment"
-        android:label="@string/ad_kit_fragment_label" />
+        android:label="@string/topic_name_ad_kit" />
     <fragment
         android:id="@+id/mlKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.mlkit.MlKitFragment"
-        android:label="@string/ml_kit_fragment_label" />
+        android:label="@string/topic_name_ml_kit" />
     <fragment
         android:id="@+id/fidoKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.fido.FidoKitFragment"
-        android:label="@string/fido_kit_fragment_label" />
+        android:label="@string/topic_name_fido_kit" />
+    <fragment
+        android:id="@+id/identityKitFragment"
+        android:name="com.ulusoy.hmscodelabs.main.identitykit.IdentityKitFragment"
+        android:label="@string/identity_kit_fragment_label" />
 </navigation>

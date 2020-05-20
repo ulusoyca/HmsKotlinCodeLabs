@@ -21,6 +21,7 @@ import com.ulusoy.hmscodelabs.main.accountkit.AccountKitFragmentModule
 import com.ulusoy.hmscodelabs.main.adkit.AdKitFragmentModule
 import com.ulusoy.hmscodelabs.main.fido.FidoKitFragmentModule
 import com.ulusoy.hmscodelabs.main.home.HomeFragmentModule
+import com.ulusoy.hmscodelabs.main.identitykit.IdentityKitFragmentModule
 import com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragmentModule
 import com.ulusoy.hmscodelabs.main.mlkit.MlKitFragmentModule
 import dagger.Module
@@ -37,6 +38,7 @@ abstract class MainActivityModule {
             AdKitFragmentModule::class,
             MlKitFragmentModule::class,
             FidoKitFragmentModule::class,
+            IdentityKitFragmentModule::class,
             MainModule::class
         ]
     )

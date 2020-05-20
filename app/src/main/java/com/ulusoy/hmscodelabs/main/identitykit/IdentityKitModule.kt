@@ -14,40 +14,32 @@
  * limitations under the License.
  */
 
-package com.ulusoy.hmscodelabs.main.home
+package com.ulusoy.hmscodelabs.main.identitykit
 
 import androidx.lifecycle.ViewModel
+import com.huawei.hms.identity.Address
+import com.huawei.hms.identity.AddressClient
 import com.ulusoy.hmscodelabs.FragmentScope
-import com.ulusoy.hmscodelabs.R
 import com.ulusoy.hmscodelabs.ViewModelKey
+import com.ulusoy.hmscodelabs.main.MainActivity
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.multibindings.IntoMap
-import javax.inject.Named
-
-const val NAMED_TOPIC_NAMES = "topic_names"
 
 @Module
-abstract class HomeModule {
+abstract class IdentityKitModule {
     @FragmentScope
     @Binds
     @IntoMap
-    @ViewModelKey(HomeViewModel::class)
+    @ViewModelKey(IdentityKitViewModel::class)
     /* Note: the return type should be ViewModel */
-    abstract fun bindViewModel(viewModel: HomeViewModel): ViewModel
+    abstract fun bindViewModel(viewModel: IdentityKitViewModel): ViewModel
 
     companion object {
         @Provides
-        @Named(NAMED_TOPIC_NAMES)
-        fun provideTopicNames(): List<Int> = listOf(
-            R.string.topic_name_ad_kit,
-            R.string.topic_name_account_kit,
-            R.string.topic_name_location_kit,
-            R.string.topic_name_map_kit,
-            R.string.topic_name_fido_kit,
-            R.string.topic_name_identity_kit,
-            R.string.topic_name_ml_kit
-        )
+        @FragmentScope
+        fun provideUserAddressClient(mainActivity: MainActivity): AddressClient =
+            Address.getAddressClient(mainActivity)
     }
 }
