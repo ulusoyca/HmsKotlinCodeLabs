@@ -55,7 +55,7 @@ class MapKitFragment : Fragment(), EasyPermissions.PermissionCallbacks {
         ) {
             EasyPermissions.requestPermissions(
                 this,
-                getString(com.ulusoy.hmscodelabs.R.string.map_kit_permission_rationale),
+                getString(com.ulusoy.hmscodelabs.R.string.permission_rationale),
                 REQUEST_CODE_PERMISSIONS,
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.ACCESS_FINE_LOCATION,

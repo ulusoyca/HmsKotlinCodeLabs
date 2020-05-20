@@ -26,6 +26,8 @@
     the background, you need to apply for the ACCESS_BACKGROUND_LOCATION permission in
     the manifest file.-->
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
