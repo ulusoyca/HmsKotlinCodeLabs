@@ -47,6 +47,7 @@ abstract class HomeModule {
             R.string.topic_name_account_kit,
             R.string.topic_name_location_kit,
             R.string.topic_name_map_kit,
+            R.string.topic_name_fido_kit,
             R.string.topic_name_iap,
             R.string.topic_name_dtm,
             R.string.topic_name_drive_kit,

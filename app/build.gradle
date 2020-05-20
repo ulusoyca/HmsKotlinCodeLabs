@@ -120,13 +120,11 @@ dependencies {
     implementation "com.huawei.hms:maps:$hmaps_version"
     implementation "com.huawei.hms:location:$hms_location_version"
     implementation "com.huawei.hms:ads-identifier:$hms_ads_version"
-
-    // Face detection SDK.
     implementation "com.huawei.hms:ml-computer-vision-face:$hms_ml_kit"
-    // Face detection model.
     implementation "com.huawei.hms:ml-computer-vision-face-emotion-model:$hms_ml_kit"
     implementation "com.huawei.hms:ml-computer-vision-face-feature-model:$hms_ml_kit"
     implementation "com.huawei.hms:ml-computer-vision-face-shape-point-model:$hms_ml_kit"
+    implementation "com.huawei.hms:fido-bioauthn:$hms_fido_kit"
 
     testImplementation "junit:junit:4.12"
     androidTestImplementation "androidx.test.ext:junit:1.1.1"
