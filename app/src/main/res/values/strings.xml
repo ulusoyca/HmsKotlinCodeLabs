@@ -21,6 +21,10 @@
     <string name="home_fragment_label">HMS Codelabs</string>
     <string name="account_kit_fragment_label">Account Kit Codelab</string>
     <string name="map_kit_fragment_label">Map Kit Codelab</string>
+    <string name="location_kit_fragment_label">Location Kit Codelab</string>
+    <string name="fido_kit_fragment_label">FIDO Kit Codelab</string>
+    <string name="ad_kit_fragment_label">Ad Kit Codelab</string>
+    <string name="ml_kit_fragment_label">ML Kit Codelab</string>
 
     <string name="hello_home_fragment">Hello, Welcome to HMS Codelabs!\n\nChoose a Codelab from the list:</string>
 
@@ -43,6 +47,7 @@
     <string name="topic_name_awareness_kit">Awareness Kit</string>
     <string name="topic_name_health_kit">Health Kit</string>
     <string name="topic_name_ad_kit">Ad Kit</string>
+    <string name="topic_name_fido_kit">FIDO Kit</string>
     <string name="codelab_not_implemented">Codelab has not yet been implemented</string>
 
 
@@ -60,4 +65,8 @@
     <string name="enabled">enabled</string>
     <string name="disabled">disabled</string>
     <string name="front_camera">Front Camera</string>
+
+    <string name="fingerprint_login_without_cryptoobject">fingerprint login without CryptoObject</string>
+    <string name="fingerprint_login_with_cryptoobject">fingerprint login with CryptoObject</string>
+    <string name="face_login_with_cryptoobject">face login with CryptoObject</string>
 </resources>

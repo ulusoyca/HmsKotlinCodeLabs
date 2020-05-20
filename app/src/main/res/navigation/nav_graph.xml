@@ -45,6 +45,9 @@
         <action
             android:id="@+id/action_home_fragment_to_mlKitFragment"
             app:destination="@id/mlKitFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_fidoKitFragment"
+            app:destination="@id/fidoKitFragment" />
     </fragment>
 
     <fragment
@@ -60,13 +63,17 @@
     <fragment
         android:id="@+id/locationKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragment"
-        android:label="LocationKitFragment" />
+        android:label="@string/location_kit_fragment_label" />
     <fragment
         android:id="@+id/adKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.adkit.AdKitFragment"
-        android:label="AdKitFragment" />
+        android:label="@string/ad_kit_fragment_label" />
     <fragment
         android:id="@+id/mlKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.mlkit.MlKitFragment"
-        android:label="MlKitFragment" />
+        android:label="@string/ml_kit_fragment_label" />
+    <fragment
+        android:id="@+id/fidoKitFragment"
+        android:name="com.ulusoy.hmscodelabs.main.fido.FidoKitFragment"
+        android:label="@string/fido_kit_fragment_label" />
 </navigation>
