@@ -12,11 +12,13 @@
 
 Home screen
 
-![accountKit](Screenshots/home_page.png)
+![homepage](Screenshots/home_1.png)
 
 Example Codelab
 
 ![accountKit](Screenshots/account_kit.png)
+
+![ml_kit](Screenshots/ml_kit_1.png)
 
 ## Author
 
