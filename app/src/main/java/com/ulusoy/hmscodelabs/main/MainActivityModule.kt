@@ -25,6 +25,7 @@ import com.ulusoy.hmscodelabs.main.home.HomeFragmentModule
 import com.ulusoy.hmscodelabs.main.identitykit.IdentityKitFragmentModule
 import com.ulusoy.hmscodelabs.main.locationkit.LocationKitFragmentModule
 import com.ulusoy.hmscodelabs.main.mlkit.MlKitFragmentModule
+import com.ulusoy.hmscodelabs.main.pushkit.PushKitFragmentModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -41,6 +42,7 @@ abstract class MainActivityModule {
             FidoKitFragmentModule::class,
             IdentityKitFragmentModule::class,
             AnalyticsKitFragmentModule::class,
+            PushKitFragmentModule::class,
             MainModule::class
         ]
     )

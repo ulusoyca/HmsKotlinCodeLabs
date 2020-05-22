@@ -57,6 +57,9 @@
         <action
             android:id="@+id/action_home_fragment_to_analyticsKitFragment"
             app:destination="@id/analyticsKitFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_pushKitFragment"
+            app:destination="@id/pushKitFragment" />
     </fragment>
 
     <fragment
@@ -122,4 +125,8 @@
         android:id="@+id/analyticsSettingsFragment"
         android:name="com.ulusoy.hmscodelabs.main.analyticskit.AnalyticsSettingsFragment"
         android:label="Analytics Settings "/>
+    <fragment
+        android:id="@+id/pushKitFragment"
+        android:name="com.ulusoy.hmscodelabs.main.pushkit.PushKitFragment"
+        android:label="PushKitFragment" />
 </navigation>

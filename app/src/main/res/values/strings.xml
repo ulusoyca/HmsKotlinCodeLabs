@@ -38,6 +38,7 @@
     <string name="topic_name_agp_firebase">AppGallery and Firebase</string>
     <string name="topic_name_drm_kit">DRM Kit</string>
     <string name="topic_name_panorama_kit">Panorama Kit</string>
+    <string name="topic_name_push_kit">Push Kit</string>
     <string name="topic_name_awareness_kit">Awareness Kit</string>
     <string name="topic_name_health_kit">Health Kit</string>
     <string name="topic_name_ad_kit">Ad Kit</string>
@@ -83,4 +84,5 @@
     <string name="wrong_answer">The answer is wrong.</string>
     <string name="correct_answer">The answer is correct.</string>
     <string name="favorite_sport">Favorite Sport</string>
+    <string name="getToken">get token</string>
 </resources>
