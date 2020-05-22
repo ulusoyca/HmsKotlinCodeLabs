@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ulusoy.hmscodelabs.main.mapkit
+package com.ulusoy.hmscodelabs.main.scankit
 
 import android.Manifest
 import android.os.Bundle
@@ -22,23 +22,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.ulusoy.hmscodelabs.databinding.FragmentMapKitBinding
+import androidx.navigation.fragment.findNavController
+import com.huawei.hms.ml.scan.HmsScan
+import com.ulusoy.hmscodelabs.databinding.FragmentScanKitBinding
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
 import timber.log.Timber
 
 private const val REQUEST_CODE_PERMISSIONS = 101
 
-class MapKitFragment : Fragment(), EasyPermissions.PermissionCallbacks {
+class ScanKitFragment : Fragment(), EasyPermissions.PermissionCallbacks {
 
-    private lateinit var binding: FragmentMapKitBinding
+    private lateinit var binding: FragmentScanKitBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMapKitBinding.inflate(inflater, container, false)
+        binding = FragmentScanKitBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -50,46 +52,15 @@ class MapKitFragment : Fragment(), EasyPermissions.PermissionCallbacks {
             this,
             getString(com.ulusoy.hmscodelabs.R.string.permission_rationale),
             REQUEST_CODE_PERMISSIONS,
-            Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.ACCESS_NETWORK_STATE,
-            Manifest.permission.INTERNET
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.CAMERA
         )
-        binding.mapView.onCreate(savedInstanceState)
-        binding.mapView.getMapAsync { huaweiMap ->
-            Timber.d("""
-                Huawei Map is ready 
-                   latitude: ${huaweiMap.cameraPosition.target.latitude}
-                   longitude: ${huaweiMap.cameraPosition.target.longitude}
-                   zoom: ${huaweiMap.cameraPosition.zoom}
-                   map type: ${huaweiMap.mapType}
-            """.trimIndent())
+        binding.btnCustomizedViewMode.setOnClickListener {
+            findNavController().navigate(ScanKitFragmentDirections.actionScanKitFragmentToScanReaderFragment())
         }
-    }
-
-    override fun onStart() {
-        super.onStart()
-        binding.mapView.onStart()
-    }
-
-    override fun onStop() {
-        super.onStop()
-        binding.mapView.onStop()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        binding.mapView.onDestroy()
-    }
-
-    override fun onPause() {
-        binding.mapView.onPause()
-        super.onPause()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        binding.mapView.onResume()
+        arguments?.getParcelable<HmsScan>("scanResult")?.let {
+            binding.resultScanKit.text = it.showResult
+        }
     }
 
     override fun onRequestPermissionsResult(
