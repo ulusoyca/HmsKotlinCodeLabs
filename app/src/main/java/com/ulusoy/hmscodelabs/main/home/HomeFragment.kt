@@ -66,6 +66,7 @@ class HomeFragment : DaggerFragment(), TopicSelectedListener {
             R.string.topic_name_identity_kit -> HomeFragmentDirections.actionHomeFragmentToIdentityKitFragment()
             R.string.topic_name_scan_kit -> HomeFragmentDirections.actionHomeFragmentToScanKitFragment()
             R.string.topic_name_analytics_kit -> HomeFragmentDirections.actionHomeFragmentToAnalyticsKitFragment()
+            R.string.topic_name_push_kit -> HomeFragmentDirections.actionHomeFragmentToPushKitFragment()
             else -> null
         }
         if (direction == null) {

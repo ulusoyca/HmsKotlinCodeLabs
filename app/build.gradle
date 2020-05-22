@@ -128,6 +128,7 @@ dependencies {
     implementation "com.huawei.hms:identity:$hms_identity_kit"
     implementation "com.huawei.hms:scan:$hms_scan_kit"
     implementation "com.huawei.hms:hianalytics:$hms_analytics_kit"
+    implementation "com.huawei.hms:push:$hms_push_kit"
 
     testImplementation "junit:junit:4.12"
     androidTestImplementation "androidx.test.ext:junit:1.1.1"

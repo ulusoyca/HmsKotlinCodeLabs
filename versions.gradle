@@ -69,4 +69,5 @@ ext {
     hms_identity_kit = "4.0.0.300"
     hms_scan_kit = "1.1.3.301"
     hms_analytics_kit = "4.0.3.300"
+    hms_push_kit = "4.0.3.301"
 }
