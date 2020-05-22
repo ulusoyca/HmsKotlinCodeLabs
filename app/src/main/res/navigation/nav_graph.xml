@@ -54,6 +54,9 @@
         <action
             android:id="@+id/action_home_fragment_to_scanKitFragment"
             app:destination="@id/scanKitFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_analyticsKitFragment"
+            app:destination="@id/analyticsKitFragment" />
     </fragment>
 
     <fragment
@@ -97,7 +100,7 @@
     <fragment
         android:id="@+id/scanReaderFragment"
         android:name="com.ulusoy.hmscodelabs.main.scankit.ScanReaderFragment"
-        android:label="ScanReaderFragment" >
+        android:label="@string/topic_name_scan_kit" >
         <action
             android:id="@+id/action_scanReaderFragment_to_scanKitFragment"
             app:destination="@id/scanKitFragment" >
@@ -107,4 +110,16 @@
         </action>
 
     </fragment>
+    <fragment
+        android:id="@+id/analyticsKitFragment"
+        android:name="com.ulusoy.hmscodelabs.main.analyticskit.AnalyticsKitFragment"
+        android:label="@string/topic_name_analytics_kit" >
+        <action
+            android:id="@+id/action_analyticsKitFragment_to_analyticsSettingsFragment"
+            app:destination="@id/analyticsSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/analyticsSettingsFragment"
+        android:name="com.ulusoy.hmscodelabs.main.analyticskit.AnalyticsSettingsFragment"
+        android:label="Analytics Settings "/>
 </navigation>

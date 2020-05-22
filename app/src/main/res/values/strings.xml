@@ -26,6 +26,7 @@
     <string name="topic_name_ml_kit">ML Kit</string>
     <string name="topic_name_wallet_kit">Wallet Kit</string>
     <string name="topic_name_safety_detect">Safety Detect</string>
+    <string name="topic_name_analytics_kit">Analytics Kit</string>
     <string name="topic_name_account_kit">Account Kit</string>
     <string name="topic_name_location_kit">Location Kit</string>
     <string name="topic_name_map_kit">Map Kit</string>
@@ -67,4 +68,19 @@
     <string name="operation_cancel">Operation cancelled.</string>
     <string name="identity_kit_fragment_label">Identity Kit</string>
     <string name="scan_kit_cutomized_view_mode">Scan Barcode</string>
+    <string name="settings">settings</string>
+    <string name="next">next</string>
+    <string name="post_score">post score</string>
+    <string name="true_answer">true</string>
+    <string name="false_answer">false</string>
+
+    <string name="save_setting_button">Save</string>
+    <string name="q1">The largest planet in the solar system is Jupiter</string>
+    <string name="q2">The first Olympic Games were held in Athens, Greece</string>
+    <string name="q3">The violin has 6 strings</string>
+    <string name="q4">Flying bats belong to birds</string>
+    <string name="q5">Sound spreads faster in the water than in the air</string>
+    <string name="wrong_answer">The answer is wrong.</string>
+    <string name="correct_answer">The answer is correct.</string>
+    <string name="favorite_sport">Favorite Sport</string>
 </resources>

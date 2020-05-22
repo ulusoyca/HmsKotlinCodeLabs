@@ -48,7 +48,8 @@ abstract class HomeModule {
             R.string.topic_name_fido_kit,
             R.string.topic_name_identity_kit,
             R.string.topic_name_ml_kit,
-            R.string.topic_name_scan_kit
+            R.string.topic_name_scan_kit,
+            R.string.topic_name_analytics_kit
         )
     }
 }

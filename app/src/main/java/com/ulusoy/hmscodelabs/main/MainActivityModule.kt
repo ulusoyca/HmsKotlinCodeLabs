@@ -19,6 +19,7 @@ package com.ulusoy.hmscodelabs.main
 import com.ulusoy.hmscodelabs.ActivityScope
 import com.ulusoy.hmscodelabs.main.accountkit.AccountKitFragmentModule
 import com.ulusoy.hmscodelabs.main.adkit.AdKitFragmentModule
+import com.ulusoy.hmscodelabs.main.analyticskit.AnalyticsKitFragmentModule
 import com.ulusoy.hmscodelabs.main.fido.FidoKitFragmentModule
 import com.ulusoy.hmscodelabs.main.home.HomeFragmentModule
 import com.ulusoy.hmscodelabs.main.identitykit.IdentityKitFragmentModule
@@ -39,6 +40,7 @@ abstract class MainActivityModule {
             MlKitFragmentModule::class,
             FidoKitFragmentModule::class,
             IdentityKitFragmentModule::class,
+            AnalyticsKitFragmentModule::class,
             MainModule::class
         ]
     )
