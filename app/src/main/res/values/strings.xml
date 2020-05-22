@@ -66,4 +66,5 @@
     <string name="face_login_with_cryptoobject">face login with CryptoObject</string>
     <string name="operation_cancel">Operation cancelled.</string>
     <string name="identity_kit_fragment_label">Identity Kit</string>
+    <string name="scan_kit_cutomized_view_mode">Scan Barcode</string>
 </resources>

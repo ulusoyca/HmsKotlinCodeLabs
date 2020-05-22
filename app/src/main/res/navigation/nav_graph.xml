@@ -51,6 +51,9 @@
         <action
             android:id="@+id/action_home_fragment_to_identityKitFragment"
             app:destination="@id/identityKitFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_scanKitFragment"
+            app:destination="@id/scanKitFragment" />
     </fragment>
 
     <fragment
@@ -83,4 +86,25 @@
         android:id="@+id/identityKitFragment"
         android:name="com.ulusoy.hmscodelabs.main.identitykit.IdentityKitFragment"
         android:label="@string/identity_kit_fragment_label" />
+    <fragment
+        android:id="@+id/scanKitFragment"
+        android:name="com.ulusoy.hmscodelabs.main.scankit.ScanKitFragment"
+        android:label="ScanKitFragment" >
+        <action
+            android:id="@+id/action_scanKitFragment_to_scanReaderFragment"
+            app:destination="@id/scanReaderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanReaderFragment"
+        android:name="com.ulusoy.hmscodelabs.main.scankit.ScanReaderFragment"
+        android:label="ScanReaderFragment" >
+        <action
+            android:id="@+id/action_scanReaderFragment_to_scanKitFragment"
+            app:destination="@id/scanKitFragment" >
+            <argument
+                android:name="scanResult"
+                app:argType="com.huawei.hms.ml.scan.HmsScan"/>
+        </action>
+
+    </fragment>
 </navigation>
